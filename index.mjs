@@ -4,7 +4,7 @@ import { load_spinner } from './spinner.mjs';
 import { executer } from './executer.mjs';
 
 const prompt = inquirer.createPromptModule();
-let options = ["Check Ubuntu Version", "Check amount of free and used memory in the system.", "Check amount of disk space used and available on file systems"];
+let options = ["Check Ubuntu Version", "Check amount of free and used memory in the system.", "Check amount of disk space used and available on file systems."];
 
 
 // make this function async to wait for spinner to complete loading
@@ -38,6 +38,12 @@ function check_input() {
             switch (answers.option) {
                 case "Check Ubuntu Version":
                     executer('lsb_release -a')
+                    break;
+                case "Check amount of free and used memory in the system.":
+                    executer('free -h');
+                    break;
+                case "Check amount of disk space used and available on file systems.":
+                    executer('df -h');
                     break;
             }
         });
