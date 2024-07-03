@@ -2,9 +2,12 @@ import chalk from "chalk";
 import { exec } from "child_process";
 
 function executer(command) {
-    exec(command, (error, stdout, stderr) => {
-        console.log(chalk.green(stdout));
-    });
+    return new Promise((res, reject) => {
+        exec(command, (error, stdout, stderr) => {
+            console.log(chalk.green(stdout));
+            res(stdout);
+        });
+    })
 }
 
 
