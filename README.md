@@ -1,5 +1,7 @@
 # Ubuntu Linux System Management CLI Tool. 🎉
 
+https://github.com/George-Okumu/Linux-Ubuntu-System-Resource-Informer/assets/62925150/8e879d5b-2c1f-4921-947b-e059a18de4da
+
 ```
 Author: George Okumu
 ```
