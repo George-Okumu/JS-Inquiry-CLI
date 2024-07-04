@@ -5,14 +5,14 @@ import { executer } from './executer.mjs';
 import { list_files_and_directories } from './list.mjs';
 
 const prompt = inquirer.createPromptModule();
-let options = ["Check Ubuntu Version", "Check amount of free and used memory in the system.", "Check amount of disk space used and available on file systems.", "List the files and directories within a folder."];
+let options = ["Check Ubuntu Version", "Check amount of free and used memory in the system.", "Check amount of disk space used and available on file systems.", "List all the files and directories within a folder.", "Check CPU Information", "Check Network Information", "List Running Processes", "Check System Uptime", "Monitor Real-Time System Activity", "Update System Packages", "Shutdown the System", "Restart the System", "Show System Logs"];
 
 
 // make this function async to wait for spinner to complete loading
 async function main() {
     try {
         await executer('date');
-        
+
         await load_spinner();
 
         console.log(chalk.yellow(`What do you want to do today?`));
@@ -47,7 +47,7 @@ function check_input() {
                 case "Check amount of disk space used and available on file systems.":
                     executer('df -h');
                     break;
-                case "List the files and directories within a folder.":
+                case "List all the files and directories within a folder.":
                     list_files_and_directories();
                     break;
             }
