@@ -45,7 +45,13 @@ The tool allows users to select from various options to perform system checks, l
    $ git clone https://github.com/George-Okumu/Linux-Ubuntu-System-Resource-Informer
    ```
 
-2. Install Dependencies.
+2. ``cd ``into the project dir.
+
+    ``` 
+    cd Linux-Ubuntu-System-Resaource-Informer 
+    ```
+
+3. Install Dependencies.
 
    ```
    $ npm install
@@ -54,9 +60,19 @@ The tool allows users to select from various options to perform system checks, l
 ## Usage
 
 - To start the CLI tool, run:
-  `    $ npm start
-   `
+
+  ```   
+   $ npm start
+   ```
   Enjoy managing your system with this handy CLI tool! 🚀
+
+<a><h2>🤝🏻 &nbsp;Let's Connect in</h2></a>
+
+[<img align="left" alt="linked-in" src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white&labelColor=green&color=green" />](https://www.linkedin.com/in/george-okumu-378997195/)
+
+[<img align="left" alt="medium" src="https://img.shields.io/badge/medium-%2312100E.svg?&style=for-the-badge&logo=medium&logoColor=green" />](https://medium.com/@george-okumu) 
+
+[<img align="left" alt="twitter" src="https://img.shields.io/badge/twitter-%231DA1F2.svg?&style=for-the-badge&logo=twitter&logoColor=white&labelColor=green&color=green" />](https://twitter.com/InnocentOkumu2).
 
 ## License
 
